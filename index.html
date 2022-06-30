@@ -14,60 +14,65 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="jumbotron">
       <h1 class="display-4">Project Tracker</h1>
       <p class="lead">Welcome to Project Tracker!</p>
-      <hr class="my-4">
+      <hr class="my-4" />
       <p id="current-time">Current Time</p>
       <p id="current-date">Current Date</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Instructions</a>
     </div>
 
-  <aside>
+    <aside>
       <form id="form">
-        <h2 class="h2">Add a New Project</h2>
+        <h4 class="h2">Add a New Project</h4>
         <div class="inputs">
-        <div class="form-group">
-          <label for="project_name">Project Name</label>
-          <input
-            type="name"
-            class="form-control"
-            id="project_name"
-            placeholder="Enter Project Name"
-          />
+          <div class="form-group">
+            <label for="project_name">Project Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="project_name"
+              placeholder="Enter Project Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="project_type">Project Type</label>
+            <select class="form-control" id="project_type">
+              <option>UI/UX</option>
+              <option>Front-End Development</option>
+              <option>Back-End Development</option>
+              <option>Databases</option>
+              <option>API</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="hourly_rate">Hourly Rate</label>
+            <input
+              type="name"
+              class="form-control"
+              id="hourly_rate"
+              placeholder="$"
+            />
+          </div>
+          <div class="form-group">
+            <label for="due_date">Due Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="due_date"
+              placeholder="When is the project due?"
+            />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="project_type">Project Type</label>
-          <select class="form-control" id="">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
+        <button type="submit" class="btn btn-dark">Add Project</button>
       </form>
     </aside>
 
