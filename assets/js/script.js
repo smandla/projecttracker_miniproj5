@@ -1,3 +1,7 @@
-$("#myModal").on("shown.bs.modal", function () {
-  $("#myInput").trigger("focus");
-});
+
+var currentTime = $('#current-time');
+var currentDate = $('#current-date');
+
+currentTime.text(moment().format('MMM Do, YYYY'));
+currentDate.text(moment().format('h:mm A'));
+
